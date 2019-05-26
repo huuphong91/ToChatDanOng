@@ -5,4 +5,16 @@
     <string name="menu_share">Chia sẻ</string>
     <string name="rating">Đánh giá</string>
     <string name="other_app_item">Ứng dụng khác</string>
+    <string name="info">Thông tin</string>
+    <string name="loadmarket">Vui lòng kết nối Internet và thử lại</string>
+    <string name="noi_dung_chia_se">App đọc sách Tố Chất Đàn Ông rất hay và hữu ích! Tải về đọc ngay nhé!</string>
+    <string name="chia_se">Chia sẻ</string>
+    <string name="email">Email: mmoneyvip@gmail.com</string>
+    <string name="web">Privacy Policy: https://mmoney.vip/privacy-policy</string>
+    <string name="todo">TODO</string>
+    <string name="ad_unit_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="on_back_button_message">Thoát App?</string>
+    <string name="no">Không</string>
+    <string name="yes">OK</string>
 </resources>

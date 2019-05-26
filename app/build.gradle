@@ -61,4 +61,9 @@ dependencies {
 
     //anko
     implementation "org.jetbrains.anko:anko:$anko_version"
+
+    //ads
+    implementation 'com.google.firebase:firebase-core:16.0.9'
+    implementation 'com.google.android.gms:play-services-ads:17.2.1'
+    implementation 'com.google.firebase:firebase-ads:17.2.1'
 }

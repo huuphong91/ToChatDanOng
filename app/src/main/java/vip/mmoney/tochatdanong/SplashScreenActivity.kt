@@ -7,6 +7,7 @@ import android.view.Window
 import android.view.WindowManager
 import vip.mmoney.tochatdanong.base.BaseActivity
 import vip.mmoney.tochatdanong.main.MainActivity
+import vip.mmoney.tochatdanong.utilities.InterstitialUtils
 
 class SplashScreenActivity : BaseActivity() {
 
@@ -19,18 +20,32 @@ class SplashScreenActivity : BaseActivity() {
 
         setContentView(R.layout.activity_splash_screen)
 
-        val thread = Thread(Runnable {
+        InterstitialUtils
+            .getShareInstance() //Khởi tạo InterstitialUtils
+            .initInterstitialAd(applicationContext) //Khởi tạo InterstitialAd bên trong InterstitialUtils và chỉ tạo 1 lần để sử dụng trong suốt vòng đời của app
+
+        changeActivity()
+    }
+
+    private fun changeActivity() {
+        Thread {
             try {
                 Thread.sleep(1500)
-            } catch (ex: Exception) {
-
-            } finally {
-                val intent = Intent(this@SplashScreenActivity, MainActivity::class.java)
-                startActivity(intent)
-                finish()
+            } catch (e: InterruptedException) {
+                e.printStackTrace()
             }
-        })
 
-        thread.start()
+            runOnUiThread { onResourcesLoaded() }
+
+        }.start()
+    }
+
+    private fun onResourcesLoaded() {
+        //Gọi hàm showInterstitialAd, nếu quảng cáo Full Screen đã được tải thì sẽ hiển thị cho user,
+        //Nếu quảng cáo FUll Screen chưa tải xong thì gọi hàm onAdClosed để chuyển màn hình ngay, không để user chờ load QC
+        InterstitialUtils.getShareInstance().showInterstitialAd {
+            val intent = Intent(this@SplashScreenActivity, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
