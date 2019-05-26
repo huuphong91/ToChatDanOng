@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "29093154598",
+    "firebase_url": "https://tochatdanong.firebaseio.com",
+    "project_id": "tochatdanong",
+    "storage_bucket": "tochatdanong.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29093154598:android:a891a04101741d3c",
+        "android_client_info": {
+          "package_name": "vip.mmoney.tochatdanong"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29093154598-d1mu1tatlfa6ijgjpq8r7ps8a9n4vfrq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vip.mmoney.tochatdanong",
+            "certificate_hash": "8b8b4f016444533bd4b3d3a8c2ec6fbd77ea9177"
+          }
+        },
+        {
+          "client_id": "29093154598-8n94ka6jc4ub9iud0itrau22n4j0e550.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBskqm2OHIfakii3H2SJny8kmhvfcj9uKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29093154598-8n94ka6jc4ub9iud0itrau22n4j0e550.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
